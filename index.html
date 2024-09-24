@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserva en Peluquería</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Reserva tu Turno</h1>
+    <form id="formularioReserva">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" required>
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" required>
+      
+      <label for="servicio">Elige un servicio:</label>
+      <select id="servicio" required>
+        <option value="corte">Corte</option>
+        <option value="barba">Barba</option>
+        <option value="corte y barba">Corte y barba</option>
+      </select>
+      
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha" required>
+      
+      <label for="hora">Hora:</label>
+      <input type="time" id="hora" required>      
+
+      <button type="submit">Reservar</button>
+    </form>
+    
+    <div id="confirmacion"></div>
+  </div>
+  <script src="./js/app.js"></script>
+</body>
+</html>
